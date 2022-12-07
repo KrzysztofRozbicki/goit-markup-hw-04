@@ -115,6 +115,11 @@ body {
   fill: currentColor;
 }
 
+.icon-client {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
 /* Klasy dla ułożenia elementów menu górnego */
 
 .top-bar {
@@ -276,7 +281,18 @@ body {
   border-radius: 4px;
   outline: 1px solid var(--icon-color);
   list-style: none;
+  color: var(--icon-color);
 }
+
+.client-list-link{
+  text-decoration: none;
+  color: var(--icon-color);
+}
+
+.client-list-link:hover{
+  color: var(--blue);
+}
+
 /* klasy dla teamu: */
 
 .team-container {

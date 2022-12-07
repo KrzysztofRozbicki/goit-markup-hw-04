@@ -8,6 +8,7 @@
   --font-address: #ffffff99;
   --shadow: rgba(0, 0, 0, 0.25);
   --background-dark: #2f303a;
+  --background-dark-transparent: #2f303a66;
   --stroke-color: #ececec;
   --border-color: #eeeeee;
   --button-color: #f5f4fa;
@@ -38,6 +39,8 @@ body {
   color: var(--font-gray);
   text-decoration: none;
   background-color: var(--background-light);
+  width: 1600px;
+  margin: 0 auto;
 }
 
 .container {
@@ -85,6 +88,15 @@ body {
   color: var(--font-white);
 }
 
+/* Klasy dla svg */
+
+.icon-top {
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 /* Klasy dla ułożenia elementów menu górnego */
 
 .top-bar {
@@ -127,7 +139,12 @@ body {
 
 .call-to-action {
   text-align: center;
-  background-color: var(--background-dark);
+  background: linear-gradient(
+      var(--background-dark-transparent),
+      var(--background-dark-transparent)
+    ),
+    url(../images/main.jpg);
+  background-size: cover;
 }
 .call-to-action-box {
   padding: 106px 252px;
@@ -207,6 +224,11 @@ body {
   letter-spacing: 0.03em;
 }
 
+.article-top {
+  padding: 25px 100px;
+  background-color: var(--button-color);
+  border-radius: 4px;
+}
 .article-header {
   color: var(--font-black);
   text-transform: uppercase;

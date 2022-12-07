@@ -97,6 +97,11 @@ body {
   margin-right: 10px;
 }
 
+.icon-article {
+  width: 70px;
+  height: 70px;
+}
+
 /* Klasy dla ułożenia elementów menu górnego */
 
 .top-bar {

@@ -17,7 +17,11 @@
   --shadow-box-1: rgba(0, 0, 0, 0.12);
   --shadow-box-2: rgba(0, 0, 0, 0.14);
   --shadow-box-3: rgba(0, 0, 0, 0.2);
+  --shadow-box-portfolio-1: rgba(0, 0, 0, 0.12);
+  --shadow-box-portfolio-2: rgba(0, 0, 0, 0.06);
+  --shadow-box-portfolio-3: rgba(0, 0, 0, 0.16);
   --section-padding: 94px;
+  --icon-background: rgba(255, 255, 255, 0.1);
 }
 
 /* deklaracja Border-box */
@@ -109,13 +113,15 @@ body {
   height: 70px;
 }
 
-.icon-team {
+.icon-social {
   width: 20px;
   height: 20px;
+  display: block;
   fill: currentColor;
 }
 
 .icon-client {
+  display: block;
   width: 106px;
   height: 60px;
   fill: currentColor;
@@ -276,21 +282,18 @@ body {
   justify-content: space-between;
 }
 
-.client-list-item {
-  padding: 16px 32px;
+.client-list-link {
   border-radius: 4px;
   outline: 1px solid var(--icon-color);
-  list-style: none;
-  color: var(--icon-color);
-}
-
-.client-list-link {
+  padding: 16px 32px;
   display: inline-block;
   color: var(--icon-color);
 }
 
-.client-list-link:hover {
+.client-list-link:hover,
+.client-list-link:focus {
   color: var(--blue);
+  outline-color: var(--blue);
 }
 
 /* klasy dla teamu: */
@@ -328,7 +331,8 @@ body {
   border-radius: 50%;
 }
 
-.team-social:hover {
+.team-social:hover,
+.team-social:focus {
   background-color: var(--blue);
   color: var(--font-white);
 }
@@ -344,6 +348,13 @@ body {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+}
+
+.project-box:hover,
+.project-box:focus {
+  box-shadow: 0px 1px 1px var(--shadow-box-portfolio-1), 0px 4px 4px var(--shadow-box-portfolio-2),
+    1px 4px 6px var(--shadow-box-portfolio-3);
+  cursor: pointer;
 }
 
 .project-picture {
@@ -425,6 +436,41 @@ body {
   color: var(--blue);
 }
 
+.footer-flex {
+  display: flex;
+  justify-content: left;
+  gap: 70px;
+}
+.social-footer-box {
+  text-align: left;
+}
+.social-footer-header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-top: 22px;
+  margin-bottom: 0px;
+}
+
+.social-footer-icon-box {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.social-footer-link {
+  padding: 12px;
+  background-color: var(--icon-background);
+  border-radius: 50%;
+  color: var(--font-white);
+}
+
+.social-footer-link:hover,
+.social-footer-link:focus{
+  background-color: var(--blue);
+}
 .contact-text-footer {
   color: var(--font-address);
   text-decoration: none;
@@ -436,6 +482,7 @@ body {
   color: var(--blue);
 }
 .contact-text {
+  font-size: 14px;
   font-style: normal;
   list-style: none;
 }

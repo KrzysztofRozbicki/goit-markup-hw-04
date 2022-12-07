@@ -12,6 +12,7 @@
   --stroke-color: #ececec;
   --border-color: #eeeeee;
   --button-color: #f5f4fa;
+  --icon-color: #afb1b8;
   --background-light: #e5e5e5;
   --shadow-box-1: rgba(0, 0, 0, 0.12);
   --shadow-box-2: rgba(0, 0, 0, 0.14);
@@ -27,6 +28,12 @@
 }
 
 /* Resetowanie stylów */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 ul,
 figure {
   margin: 0px;
@@ -100,6 +107,12 @@ body {
 .icon-article {
   width: 70px;
   height: 70px;
+}
+
+.icon-team {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 /* Klasy dla ułożenia elementów menu górnego */
@@ -248,6 +261,22 @@ body {
   line-height: 1.7;
 }
 
+.our-clients {
+  background-color: var(--font-white);
+}
+
+.client-list-flex {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.client-list-item {
+  padding: 16px 32px;
+  border-radius: 4px;
+  outline: 1px solid var(--icon-color);
+  list-style: none;
+}
 /* klasy dla teamu: */
 
 .team-container {
@@ -261,12 +290,31 @@ body {
 }
 
 .team-container figcaption {
-  padding: 30px 0px;
+  padding: 30px 32px;
   text-align: center;
 }
 .team-member {
   color: var(--font-black);
   font-weight: 500;
+}
+
+.team-social-flex {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.team-social {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  color: var(--icon-color);
+  border-radius: 50%;
+}
+
+.team-social:hover {
+  background-color: var(--blue);
+  color: var(--font-white);
 }
 
 .team-position {

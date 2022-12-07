@@ -284,12 +284,12 @@ body {
   color: var(--icon-color);
 }
 
-.client-list-link{
-  text-decoration: none;
+.client-list-link {
+  display: inline-block;
   color: var(--icon-color);
 }
 
-.client-list-link:hover{
+.client-list-link:hover {
   color: var(--blue);
 }
 

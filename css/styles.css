@@ -325,8 +325,7 @@ body {
 }
 
 .team-social {
-  width: 44px;
-  height: 44px;
+  display: block;
   padding: 12px;
   color: var(--icon-color);
   border-radius: 50%;
@@ -462,6 +461,7 @@ body {
 }
 
 .social-footer-link {
+  display: block;
   padding: 12px;
   background-color: var(--icon-background);
   border-radius: 50%;
@@ -469,7 +469,7 @@ body {
 }
 
 .social-footer-link:hover,
-.social-footer-link:focus{
+.social-footer-link:focus {
   background-color: var(--blue);
 }
 .contact-text-footer {
